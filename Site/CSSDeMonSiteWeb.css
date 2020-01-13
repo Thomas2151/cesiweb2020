@@ -1,0 +1,48 @@
+
+body {
+	font-family: Georgia, serif;
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
+
+body .corps{
+	border: 10px
+}
+
+h1 {
+	font-style: inherit;
+}
+
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8DC63F;
+
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation li a:hover:not(.active) {
+  background-color: gray;
+}
+
+.active {
+  background-color: #056839;
+}
+
+
+
