@@ -1,2 +1,2 @@
 # cesiweb2020
-cours de web 
+Entrainement à la création de site web 
