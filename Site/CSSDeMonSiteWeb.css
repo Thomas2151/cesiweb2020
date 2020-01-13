@@ -6,9 +6,8 @@ body {
 	
 }
 
-
-body .corps{
-	border: 10px
+img {
+	max-width: 100%;
 }
 
 h1 {
