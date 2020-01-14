@@ -10,23 +10,51 @@
 	<link rel="stylesheet" href="CSSDeMonSiteWeb.css" />
 	<link rel="stylesheet" href="CSScontact.css" />
 
+	<script src='https://maps.googleapis.com/maps/api/js?key='> </script>
+
     <title>Contactez-nous !</title>
+
   </head>
 
-  <body>
+  <body >
+	<div class="head">
+		<img src="Img/logo.png" alt="alt">
 
-  	<img src="Img/logo.png" alt="alt">
 
-
-	<nav class="navigation" aria-label="Primary">
-	    <ul>
-	      <li><a href="index.html" >Accueil </a></li>
-	      <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
-	      <li><a href="metier.html">Métiers </a></li>
-	      <li><a href="contact.html" class="active" >Contact </a></li>
-	    </ul>
-    </nav>
+		<nav class="navigation" aria-label="Primary">
+		    <ul>
+		      <li><a href="index.html" >Accueil </a></li>
+		      <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
+		      <li><a href="metier.html">Métiers </a></li>
+		      <li><a href="contact.html" class="active" >Contact </a></li>
+		    </ul>
+	    </nav>
+	</div>
+  	
 <br>
+
+
+<div style='overflow:hidden;height:440px;width:100%;' class="maps">
+
+    <!--position de la carte dans la page html-->
+    <div id='gmap_canvas' style='height:350px;width:100%;'></div>
+    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    <script>
+            function init_map() {
+            var myOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(46.6931,-1.37312),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+        addMarker()
+       </script>
+
+</div>
+
+
 <main>
   	<form action="contact.html" method="post">
 	    <div>
@@ -43,7 +71,7 @@
 	    </div>
 	    <div>
 	        <label for="msg">Message</label>
-	        <input type="text" id="msg" name="user_msg">
+	        <input type="text" id="msg" name="user_msg" >
 	    </div>
 	    <input type="submit" value="Envoyer" class="submit">
 	</form>
@@ -67,14 +95,18 @@
 					</div>
 				</div>	
 
-				<div class="suiveznous">
-					<img src="Img/icones/suiveznous.png" alt="facebook" >
+			<div class="suiveznous">
+					<img src="Img/icones/suiveznous.png" alt="suivez_nous">
 					<div class="soustitre_suiveznous">
 						<p>Suivez Nous</p>
 					</div>
 					<div class="facebook">
 						<a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
 						<img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
+					</div>
+					<div class="linkedin">
+						<a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+						<img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
 					</div>
 
 					

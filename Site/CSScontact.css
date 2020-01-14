@@ -6,6 +6,7 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
 }
 
 input[type=email] {
@@ -31,4 +32,11 @@ input[type=submit] {
 
 input:hover:not(.active) {
   background-color: #8DC63F;
+}
+label {
+  padding-left: 1%
+}
+
+body{
+  background-color:#F5F5F5;
 }

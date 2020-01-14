@@ -4,8 +4,12 @@ body {
 	margin-left: 15%;
 	margin-right: 15%;
 	box-shadow: 0px 10px 16px rgba(0,0,0,0.10);
-	padding: 0 1% 0 1%
+	
+	
+}
 
+.corps{
+	background-color:#F5F5F5;
 }
 
 img {
@@ -20,12 +24,10 @@ h1 {
 }
 
 h1,h2{
+	text-align: center;
 	font-family: Open Sans , sans-serif;
 	color: #8DC63F;
 }
-
-
-
 
 .navigation ul {
 
@@ -95,6 +97,11 @@ grid-column: 2 ;
 .facebook { 
   grid-column: 2 ;
   grid-row: 3 ;
+
 }
 
+.linkedin { 
+  grid-column: 2 ;
+  grid-row: 3 ;
+}
 
