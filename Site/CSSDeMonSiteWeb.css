@@ -3,10 +3,15 @@ body {
 	font-family: Georgia, serif;
 	margin-left: 15%;
 	margin-right: 15%;
-	
+	box-shadow: 0px 10px 16px rgba(0,0,0,0.10);
+	padding: 0 1% 0 1%
+
 }
 
 img {
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
 	max-width: 100%;
 }
 
@@ -14,8 +19,16 @@ h1 {
 	font-style: inherit;
 }
 
+h1,h2{
+	font-family: Open Sans , sans-serif;
+	color: #8DC63F;
+}
+
+
+
 
 .navigation ul {
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -44,7 +57,44 @@ h1 {
   background-color: #056839;
 }
 
-h1,h2{
-	font-family: Open Sans , sans-serif;
-	color: #8DC63F;
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  
+
 }
+
+.contact {
+  grid-column: 1;
+  grid-row: 1;
+}
+.soustitre_contact {
+  grid-column: 1;
+  grid-row: 2;
+
+}
+.info_contact{
+	grid-column: 1;
+	grid-row: 3;
+	
+}
+
+.suiveznous{
+	grid-column: 2 ;
+  grid-row: 1 ;
+}
+
+.soustitre_suiveznous{
+
+grid-column: 2 ;
+  grid-row: 2 ;	
+}
+.facebook { 
+  grid-column: 2 ;
+  grid-row: 3 ;
+}
+
+
