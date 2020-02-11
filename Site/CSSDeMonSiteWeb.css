@@ -59,49 +59,83 @@ h1,h2{
   background-color: #056839;
 }
 
+.soustitre{
+	width: 100%;
+	text-align:   center;
+}
+
+
+@media screen and (min-width:   768px) { 
 .footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  text-align: center;
+
+}
+
+}
+
+@media screen and (min-width:   992px) { 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
   
+}
+
+
 
 }
 
-.contact {
-  grid-column: 1;
-  grid-row: 1;
-}
-.soustitre_contact {
-  grid-column: 1;
-  grid-row: 2;
 
-}
-.info_contact{
-	grid-column: 1;
-	grid-row: 3;
-	
-}
 
-.suiveznous{
+@media screen and (min-width: 1200px) { 
+	.footer {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 10px;
+	  grid-auto-rows: minmax(100px, auto);
+	  text-align: center;
+	}
+
+	.contact {
+	  grid-column: 1;
+	  grid-row: 1;
+	}
+
+	.soustitre_contact {
+	  grid-column: 1;
+	  grid-row: 2;
+
+	}
+	.info_contact{
+		grid-column: 1;
+		grid-row: 3;
+		
+	}
+
+	.suiveznous{
+		grid-column: 2 ;
+	  grid-row: 1 ;
+	}
+
+	.soustitre_suiveznous{
 	grid-column: 2 ;
-  grid-row: 1 ;
+	  grid-row: 2 ;	
+	}
+
+	.facebook { 
+	  grid-column: 2 ;
+	  grid-row: 3 ;
+
+	}
+
+	.linkedin { 
+	  grid-column: 2 ;
+	  grid-row: 3 ;
+	}
 }
 
-.soustitre_suiveznous{
-
-grid-column: 2 ;
-  grid-row: 2 ;	
-}
-.facebook { 
-  grid-column: 2 ;
-  grid-row: 3 ;
-
-}
-
-.linkedin { 
-  grid-column: 2 ;
-  grid-row: 3 ;
-}
 

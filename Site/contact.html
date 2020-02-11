@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="CSScontact.css" />
 
 	<script src='https://maps.googleapis.com/maps/api/js?key='> </script>
-
     <title>Contactez-nous !</title>
 
   </head>
@@ -56,24 +55,28 @@
 
 
 <main>
-  	<form action="contact.html" method="post">
-	    <div>
+  	<form class="formulaire" action="contact.html" method="post">
+	    <div class="form_name">
 	        <label for="name">Nom</label>
 	        <input type="text" id="name" name="user_name">
 	    </div>
-	    <div>
+	    <div class="form_prenom">
+	        <label for="name">Prénom</label>
+	        <input type="text" id="prenom" name="user_first_name">
+	    </div>
+	    <div class="form_email">
 	        <label for="mail">E-mail </label>
 	        <input type="email" id="mail" name="user_mail">
 	    </div>
-	    <div>
+	    <div class="form_objet">
 	        <label for="objet">Objet </label>
 	        <input type="text" id="objet" name="user_object">
 	    </div>
-	    <div>
+	    <div class="form_message">
 	        <label for="msg">Message</label>
-	        <input type="text" id="msg" name="user_msg" >
+	       <textarea class="form_message_text" placeholder="Votre message..." name="textarea" rows="5" cols="30" ></textarea>
 	    </div>
-	    <input type="submit" value="Envoyer" class="submit">
+	    <input type="submit" value="Envoyer" class="form_submit">
 	</form>
 </main>
 		<footer>
@@ -84,7 +87,7 @@
 					<a href="contact.html" target="_blank" >    <img src="Img/icones/nousContactez.png" alt="Contactez-nous">
 					</a> 
 					<div class="soustitre_contact">
-						<p>Nous Contactez</p>
+						<p>Contactez Nous</p>
 					</div>
 					<div class="info_contact">
 						<p>02 51 98 18 32 <br>contact@madera-construction.com <br>
@@ -96,7 +99,9 @@
 				</div>	
 
 			<div class="suiveznous">
-					<img src="Img/icones/suiveznous.png" alt="suivez_nous">
+				<img src="Img/icones/suivezNous.png" alt="suivez_nous">
+
+					
 					<div class="soustitre_suiveznous">
 						<p>Suivez Nous</p>
 					</div>
