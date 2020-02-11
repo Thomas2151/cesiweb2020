@@ -1,6 +1,8 @@
 html{font-size: 62.5%}
 
-
+body{
+  font-size:1.6em;
+}
 input[type=text] {
   width: 100%;
   padding: 1.2em 2em;
