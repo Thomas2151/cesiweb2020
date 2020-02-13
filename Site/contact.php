@@ -69,7 +69,7 @@
 	        <input type="text" id="name" name="user_name">
 	    </div>
 	    <div class="form_prenom">
-	        <label for="name">Prénom</label>
+	        <label for="prenom">Prénom</label>
 	        <input type="text" id="prenom" name="user_first_name">
 	    </div>
 	    <div class="form_email">
@@ -81,15 +81,13 @@
 	        <input type="text" id="objet" name="user_object">
 	    </div>
 	    <div class="form_message">
-	        <label for="msg">Message</label>
-	       <textarea class="form_message_text" placeholder="Votre message..." name="textarea" rows="5" cols="30" ></textarea>
+	        <label for="message">Message</label>
+	       <textarea id="message" class="form_message_text" placeholder="Votre message..." name="textarea" rows="5" cols="30" ></textarea>
 	    </div>
 	    <input type="submit" value="Envoyer" class="form_submit">
 	</form>
 </main>
 		<footer>
-
-
 			<div class="footer" >
 				<div class="contact">
 					<a href="contact.html" target="_blank" >    <img src="Img/icones/nousContactez.png" alt="Contactez-nous">
@@ -105,28 +103,30 @@
 						</p>
 					</div>
 				</div>	
+			
+		       <div class="suiveznous"> 
+		          <img src="Img/icones/suivezNous.png" alt="suivez_nous">
+		          <div class="soustitre_suiveznous">
+		            <p>Suivez Nous</p>
+		          </div>
+		          <div class="reseaux">
 
+		            <div class="facebook">
+		              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+		              <img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
+		            </div>
+		            <div class="linkedin">
+		              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+		              <img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
+		            </div>
+		          </div>
+		          
+		        </div>
 
-	       <div class="suiveznous"> 
-	          <img src="Img/icones/suivezNous.png" alt="suivez_nous">
-	          <div class="soustitre_suiveznous">
-	            <p>Suivez Nous</p>
-	          </div>
-	          <div class="reseaux">
-
-	            <div class="facebook">
-	              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
-	              <img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
-	            </div>
-	            <div class="linkedin">
-	              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
-	              <img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
-	            </div>
-	          </div>
-	          
 	        </div>
+
 		</footer>
-<script type="text/javascript" src="accordeon.js"></script>
+<script src="accordeon.js"></script>
   </body>
 
 </html>
