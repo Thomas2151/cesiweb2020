@@ -16,8 +16,11 @@
    <body>
   <div class="head" id="app-3">
       
-      <img src="Img/logo.png" alt="logo" class="logo_accueil">
-    
+    <img src="Img/logo.png" alt="logo" class="logo_accueil">
+    <img onclick="topFunction()" id="flecheHaut" src="Img/icones/up_arrow2.png" alt="fleche_haut" class="fleche_haut" srcset="Img/icones/up_arrow.png 200w,
+             Img/icones/up_arrow2.png 640w">
+	
+
      <button class="accordion" @click="seen =! seen">Menu</button>
         <div class="panel" v-if="seen" >
           <ul>
@@ -110,7 +113,7 @@
       </div>
     </footer>
 
-<script  src="accordeon.js"></script>
+<script  src="application.js"></script>
   </body>
 
 </html>

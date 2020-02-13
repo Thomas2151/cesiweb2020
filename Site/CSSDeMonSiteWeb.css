@@ -1,7 +1,7 @@
 
 html{
-	font-size: 62.5%
-
+	font-size: 62.5%;
+	
 }
 
 
@@ -96,6 +96,26 @@ h1,h2,h3{
 }
 
 
+.fleche_haut {
+  display: none; 
+  position: fixed; 
+  bottom: 0.5em; 
+  right: 0.5em; 
+  z-index: 99;/
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+  padding: 1.4em; 
+  border-radius: 1em; 
+  font-size: 1.8em; 
+  height: 3em;
+  width: 3em;
+}
+
+.fleche_haut:hover {
+  background-color: gray; 
+}
+
 
 /*accordion*/
 
@@ -114,27 +134,25 @@ h1,h2,h3{
   transition-duration:  0.3s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .accordion:hover {
   background-color: #056839;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795'; 
   font-size: 1.3em;
   color: #777;
   float: right;
   margin-left: 0.5em;
   position: absolute;
   right: 0.5em;
- margin-bottom: 0.6em;
+  margin-bottom: 0.6em;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; 
 }
 
  .navigation{
@@ -152,30 +170,28 @@ h1,h2,h3{
 }
 
 @media screen and (min-width: 20em) { 
-.footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1em;
-  grid-auto-rows: minmax(10em, auto);
+	.footer {
+	  display: grid;
+	  grid-template-columns: repeat(1, 1fr);
+	  grid-gap: 1em;
+	  grid-auto-rows: minmax(10em, auto);
 
-}
+	}
 
-.accordion{
-	height: 2em;
-	text-align: center;
-}
+	.accordion{
+		height: 2em;
+		text-align: center;
+	}
 
-.nosActivites{
-	display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1em;
-  grid-auto-rows: minmax(10em, auto);
-}
+	.nosActivites{
+	  display: grid;
+	  grid-template-columns: repeat(1, 1fr);
+	  grid-gap: 1em;
+	  grid-auto-rows: minmax(10em, auto);
+	}
 
-.reseaux{
-
-	  display: flex;
-		
+	.reseaux{
+		display: flex;	
 	}
 
 

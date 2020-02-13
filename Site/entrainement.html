@@ -4,11 +4,49 @@
 <head>
 	 <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- development version, includes helpful console warnings -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<title>Entrainement</title>
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+<nav>
+  <a href="#1">1</a>
+  <a href="#2">2</a>
+  <a href="#3">3</a>
+</nav>
+
+<div class="scrolling-box">
+  <section id="1">This is the first section</section>
+  <section id="2">This is the second section</section>
+  <section id="3">This is the third section</section>
+</div>
+
+
+<style type="text/css">
+  
+ 
+
+.scrolling-box {
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+}
+
+
+</style>
+
+
+
 <div id="app">
   {{ message }}
 </div>
@@ -118,6 +156,7 @@ var app6 = new Vue({
     message: 'Hello Vue!'
   }
 })
+
 
 
 
