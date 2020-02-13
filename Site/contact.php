@@ -90,7 +90,7 @@
 		<footer>
 			<div class="footer" >
 				<div class="contact">
-					<a href="contact.html" target="_blank" >    <img src="Img/icones/nousContactez.png" alt="Contactez-nous">
+					<a href="contact.php" target="_blank" >    <img src="Img/icones/nousContactez.png" alt="Contactez-nous">
 					</a> 
 					<div class="soustitre" >
 						<p>Contactez Nous</p>
