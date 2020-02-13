@@ -8,21 +8,23 @@
     <link rel="icon" href="img/icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSSDeMonSiteWeb.css" />
      <link rel="stylesheet" href="CSSquiSommesNous.css" />
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <title>Qui sommes-nous</title>
   </head>
    <body>
-  <div class="head">
-    <img src="Img/logo.png" alt="alt">
-
-
-    <button class="accordion">Menu</button>
-    <div class="panel">
-      <ul>
-          <li><a href="index.html" >Accueil </a></li>
-          <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
-          <li><a href="contact.html" >Contact </a></li>
-        </ul>
-    </div>
+  <div class="head" id="app-3">
+      
+      <img src="Img/logo.png" alt="logo" class="logo_accueil">
+    
+     <button class="accordion" @click="seen =! seen">Menu</button>
+        <div class="panel" v-if="seen" >
+          <ul>
+              <li><a href="index.html" >Accueil </a></li>
+              <li><a href="quisommesnous.html" >Qui sommes-nous ? </a></li>
+              <li><a href="contact.html"  >Contact </a></li>
+            </ul>
+        </div>
 
     
 
@@ -33,19 +35,25 @@
           <li><a href="contact.html"  >Contact </a></li>
         </ul>
       </nav>
+
   </div>
 
   <main>
+  
     <h1>L'Entreprise</h1>
+         <img src="Img/chalet_en_bois_a_toit_plat.jpg" alt="nos_valeurs"> 
       <p class="text">Le Groupe Madera a été créé en 1990, il est spécialisé dans la production de constructions en bois pour les particuliers (chalets, terrasses, extensions de maison …) et pour les collectivités (abris de bus, mobiliers urbains, aires de jeux…). Plus récemment, l’entreprise a développé son activité en s’orientant sur les constructions de maisons modulaires et écologiques en bois.</p>
   </main>
 
     <h2>Notre Métier</h2>
+             <img src="Img/maison_bois3.jpg"  alt="nos_valeurs"> 
     <p class="text">Le concept MADERA est orienté vers des solutions modulaires innovantes et offre des réalisations uniques de bâtiments architecturés en bois. Avec MADERA, vos bâtiments sont personnalisables et innovants. Tous les avantages du modulaire sont réunis avec en plus la qualité et le confort d’un bâtiment thermiquement performant.Les modulaires MADERA s’adaptent à tous vos projets.</p>
 
+
     <h2>Nos Valeurs</h2>
-     <p class="text">Le concept MADERA est orienté vers des solutions modulaires innovantes et offre des réalisations uniques de bâtiments architecturés en bois. Avec MADERA, vos bâtiments sont personnalisables et innovants. Tous les avantages du modulaire sont réunis avec en plus la qualité et le confort d’un bâtiment thermiquement performant.Les modulaires MADERA s’adaptent à tous vos projets.</p>
-     
+        <img src="Img/produire.jpg" alt="nos_valeurs"> 
+     <p class="text">Le concept MADERA respecte également tous les concepts de l'écoconception. Nos matériaux sont tous issus du recyclage et de composant dédié à la récuperation et réutilisation. Nous avons un regard tournée vers les associations  </p>
+
     <h2>Figures importantes </h2> 
       <h3> Nos 2 dirigeants  </h3>
         <div class="Figures">
@@ -101,29 +109,7 @@
       </div>
     </footer>
 
-
+<script type="text/javascript" src="accordeon.js"></script>
   </body>
 
 </html>
-
-<script type="text/javascript">
-  
-  var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>

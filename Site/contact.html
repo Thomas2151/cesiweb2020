@@ -9,26 +9,25 @@
 	<link rel="icon" href="img/icones/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="CSSDeMonSiteWeb.css" />
 	<link rel="stylesheet" href="CSScontact.css" />
-	<script type="text/javascript" src="accordeon.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?key='> </script>
     <title>Contactez-nous !</title>
 
   </head>
 
   <body >
-	<div class="head">
-		<img src="Img/logo.png" alt="alt">
-
-
-		<button class="accordion">Menu</button>
-		<div class="panel">
-		  <ul>
-		      <li><a href="index.html" >Accueil </a></li>
-		      <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
-		      
-		      <li><a href="contact.html" >Contact </a></li>
-		    </ul>
-		</div>
+	 <div class="head" id="app-3">
+      
+      <img src="Img/logo.png" alt="logo" class="logo_accueil">
+    
+     <button class="accordion" @click="seen =! seen">Menu</button>
+        <div class="panel" v-if="seen" >
+          <ul>
+              <li><a href="index.html" >Accueil </a></li>
+              <li><a href="quisommesnous.html" >Qui sommes-nous ? </a></li>
+              <li><a href="contact.html"  >Contact </a></li>
+            </ul>
+        </div>
 
 		
 
@@ -130,29 +129,7 @@
 	          
 	        </div>
 		</footer>
-
+<script type="text/javascript" src="accordeon.js"></script>
   </body>
 
 </html>
-
-<script type="text/javascript">
-  
-  var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
