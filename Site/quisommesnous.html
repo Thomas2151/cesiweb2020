@@ -7,40 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSSDeMonSiteWeb.css" />
-
+     <link rel="stylesheet" href="CSSquiSommesNous.css" />
     <title>Qui sommes-nous</title>
   </head>
-    <body>
-  <img src="Img/logo.png" alt="alt">
-  
-  <button class="accordion">Menu</button>
+   <body>
+  <div class="head">
+    <img src="Img/logo.png" alt="alt">
+
+
+    <button class="accordion">Menu</button>
     <div class="panel">
       <ul>
           <li><a href="index.html" >Accueil </a></li>
           <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
-          <li><a href="metier.html">Métiers </a></li>
-          <li><a href="contact.html"  >Contact </a></li>
+          <li><a href="contact.html" >Contact </a></li>
         </ul>
     </div>
 
-  
-  <nav class="navigation" aria-label="Primary">
-    <ul>
-      <li><a href="index.html">Accueil </a></li>
-      <li><a href="quisommesnous.html"  class="activeNav">Qui sommes-nous ? </a></li>
-      <li><a href="metier.html">Métiers </a></li>
-      <li><a href="contact.html">Contact </a></li>
-    </ul>
-  </nav>
+    
+
+    <nav class="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" >Accueil </a></li>
+          <li><a href="quisommesnous.html" class="activeNav">Qui sommes-nous ? </a></li>
+          <li><a href="contact.html"  >Contact </a></li>
+        </ul>
+      </nav>
+  </div>
+
   <main>
     <h1>L'Entreprise</h1>
-      <p>Le Groupe Madera a été créé en 1990, il est spécialisé dans la production de constructions en bois pour les particuliers (chalets, terrasses, extensions de maison …) et pour les collectivités (abris de bus, mobiliers urbains, aires de jeux…). Plus récemment, l’entreprise a développé son activité en s’orientant sur les constructions de maisons modulaires et écologiques en bois.</p>
+      <p class="text">Le Groupe Madera a été créé en 1990, il est spécialisé dans la production de constructions en bois pour les particuliers (chalets, terrasses, extensions de maison …) et pour les collectivités (abris de bus, mobiliers urbains, aires de jeux…). Plus récemment, l’entreprise a développé son activité en s’orientant sur les constructions de maisons modulaires et écologiques en bois.</p>
   </main>
-    <h2>Structure organisationnelle de l’entreprise </h2> 
 
-      <p>L’entreprise est organisée autour de deux directions métier, d’une direction administrative et d’une direction générale :</p>
-      
-  <img src="Img/organigramme.png" alt="alt"> <br>
+    <h2>Notre Métier</h2>
+    <p class="text">Le concept MADERA est orienté vers des solutions modulaires innovantes et offre des réalisations uniques de bâtiments architecturés en bois. Avec MADERA, vos bâtiments sont personnalisables et innovants. Tous les avantages du modulaire sont réunis avec en plus la qualité et le confort d’un bâtiment thermiquement performant.Les modulaires MADERA s’adaptent à tous vos projets.</p>
+
+    <h2>Nos Valeurs</h2>
+     <p class="text">Le concept MADERA est orienté vers des solutions modulaires innovantes et offre des réalisations uniques de bâtiments architecturés en bois. Avec MADERA, vos bâtiments sont personnalisables et innovants. Tous les avantages du modulaire sont réunis avec en plus la qualité et le confort d’un bâtiment thermiquement performant.Les modulaires MADERA s’adaptent à tous vos projets.</p>
+     
+    <h2>Figures importantes </h2> 
+      <h3> Nos 2 dirigeants  </h3>
+        <div class="Figures">
+             
+        <div class="anthony">
+          <img src="Img/anthony.png" alt="ANTHONY MORINET"> 
+          <p> Ancien salarié d’un groupe national de construction.</p>
+        </div>
+        <div class="idalie">
+            <img src="Img/idalle.png" alt="IDALIE PETITGAS" class="idalie">
+          <p>Ancienne salariée d‘un fabricant de bâtiments modulaires.</p>
+        </div>
+</div>
+   
 
    <footer>
 
@@ -61,20 +80,22 @@
           </div>
         </div>  
 
-       <div class="suiveznous">
+       <div class="suiveznous"> 
           <img src="Img/icones/suivezNous.png" alt="suivez_nous">
           <div class="soustitre_suiveznous">
             <p>Suivez Nous</p>
           </div>
-          <div class="facebook">
-            <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
-            <img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
-          </div>
-          <div class="linkedin">
-            <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
-            <img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
-          </div>
+          <div class="reseaux">
 
+            <div class="facebook">
+              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+              <img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
+            </div>
+            <div class="linkedin">
+              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+              <img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
+            </div>
+          </div>
           
         </div>
       </div>
@@ -85,3 +106,24 @@
 
 </html>
 
+<script type="text/javascript">
+  
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

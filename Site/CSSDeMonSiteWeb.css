@@ -1,12 +1,31 @@
 
 html{
 	font-size: 62.5%
+
 }
+
+
 body {
-	font-family: Georgia, serif;
-	margin-left: 15%;
-	margin-right: 15%;
-	box-shadow: 0em 1em 1.6em rgba(0,0,0,0.10);
+
+  background-color:#F5F5F5;
+	margin-left: none;
+	margin-right: none;
+	box-shadow: none;
+
+		max-width: 200em;
+}
+
+p{
+	font-family: Open Sans , sans-serif;
+
+}
+	
+.text{
+
+	width: 75%;
+	padding-left: 	10%;
+	padding-right: 	10%;
+   text-align: center;
 }
 
 .corps{
@@ -22,9 +41,10 @@ img {
 
 h1 {
 	font-style: inherit;
+	font-family: Open Sans , sans-serif;
 }
 
-h1,h2{
+h1,h2,h3{
 	text-align: center;
 	font-family: Open Sans , sans-serif;
 	color: #8DC63F;
@@ -56,16 +76,14 @@ h1,h2{
   background-color: gray;
 }
 
-.activeNav {
-  background-color: #056839;
-}
-
 .soustitre{
 	width: 100%;
 	text-align:   center;
 }
 
 .footer{
+
+	padding-top: 4em;
 	justify-items: center;
    text-align: center;
 }
@@ -116,6 +134,10 @@ h1,h2{
  .navigation{
  	display: none;
  }
+ 
+.activeNav {
+  background-color: #056839;
+}
 
 @media screen and (min-width: 30em) { 
 .footer {
@@ -130,25 +152,9 @@ h1,h2{
 
 }
 
-@media screen and (min-width:   99.2em) { 
+@media screen and (min-width:   80em) { 
+
 .footer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1em;
-  grid-auto-rows: minmax(10em, auto);
-   
-}
-
-
-
-
-
-}
-
-
-
-@media screen and (min-width: 120em) { 
-	.footer {
 	  display: grid;
 	  grid-template-columns: repeat(2, 1fr);
 	  grid-gap: 1em;
@@ -161,13 +167,13 @@ h1,h2{
 
 	.navigation{
  	display: block;
- }
-.accordion{
-	display: none;
-}
-.panel{
-	display: none;
-}
+	 }
+	.accordion{
+		display: none;
+	}
+	.panel{
+		display: none;
+	}
 	.contact {
 	  grid-column: 1;
 	  grid-row: 1;
@@ -194,16 +200,30 @@ h1,h2{
 	  grid-row: 2 ;	
 	}
 
-	.facebook { 
+	.reseaux{
+	  display: flex;
 	  grid-column: 2 ;
 	  grid-row: 3 ;
-
+	  flex:1;
 	}
 
-	.linkedin { 
-	  grid-column: 2 ;
-	  grid-row: 3 ;
-	}
+
+	body {
+	font-family: Georgia, serif;
+	margin-left: 15%;
+	margin-right: 15%;
+	box-shadow: 0em 1em 1.6em rgba(0,0,0,0.10);
+	 font-size:1.6em;
+	}	
+
+
+}
+
+
+
+@media screen and (min-width: 120em) { 
+	
+
 }
 
 
