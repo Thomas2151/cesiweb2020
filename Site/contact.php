@@ -29,14 +29,11 @@
             </ul>
         </div>
 
-		
-
 		<nav class="navigation" aria-label="Primary">
 		    <ul>
 		      <li><a href="index.html" >Accueil </a></li>
-		      <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>
-		   
-		      <li><a href="contact.html" class="activeNav" >Contact </a></li>
+		      <li><a href="quisommesnous.html">Qui sommes-nous ? </a></li>   
+		      <li><a href="contact.php" class="activeNav" >Contact </a></li>
 		    </ul>
 	    </nav>
 	</div>
@@ -66,7 +63,7 @@
 
 
 <main>
-  	<form class="formulaire" action="contact.html" method="post">
+  	<form class="formulaire" action="contact.php" method="post">
 	    <div class="form_name">
 	        <label for="name">Nom</label>
 	        <input type="text" id="name" name="user_name">
