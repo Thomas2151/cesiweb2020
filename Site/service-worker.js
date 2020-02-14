@@ -2,7 +2,8 @@ var staticCacheName = 'pwa-starter';
 var filesToCache = [
   '/',
   'index.html',
-  'css/style.css',
+  'quisommesnous.html',
+  'contact.php',
   'main.js'
 ];
 
