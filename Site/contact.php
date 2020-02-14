@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="CSScontact.css" />
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?key='> </script>
+	<script src="main.js"></script>
     <title>Contactez-nous !</title>
 
   </head>
@@ -118,7 +119,7 @@
 		              <img src="Img/icones/fb.png" alt="facebook" width="60" height="60"></a>
 		            </div>
 		            <div class="linkedin">
-		              <a href="https://www.facebook.com/Madera-construction-bois-170020203016473/" target="_blank"  rel="noopener">
+		              <a href="https://www.linkedin.com/company/madera---le-modulaire-bois/" target="_blank"  rel="noopener">
 		              <img src="Img/icones/linkedin.png" alt="facebook" width="60" height="60"></a>
 		            </div>
 		          </div>

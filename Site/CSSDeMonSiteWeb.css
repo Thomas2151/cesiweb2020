@@ -1,9 +1,27 @@
 
 html{
 	font-size: 62.5%;
-	scrollbar-color: yellow blue;
+
+	stop-color: green #aaa;
+	scroll-behavior: smooth;
+
 }
 
+/**https://www.screenfeed.fr/blog/personnaliser-les-scrollbars-webkit-0366/**/
+::-webkit-scrollbar {									
+	width: 1em;
+    background-color: #aaa; 
+    -webkit-border-top-right-radius: 1em 0.5em;
+	-webkit-border-bottom-right-radius: 1em 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+	
+::-webkit-scrollbar-thumb {
+    background: green; 
+    -webkit-border-top-right-radius: 1em 0.5em;
+	-webkit-border-bottom-right-radius: 1em 0.5em;
+	-webkit-border-radius: 0.5em;
+}
 
 body {
 
@@ -12,12 +30,11 @@ body {
 	margin-right: none;
 	box-shadow: none;
 	font-size:1.2em;
-		max-width: 200em;
+	max-width: 200em;
 }
 
 p{
 	font-family: Open Sans , sans-serif;
-
 }
 	
 .text{
