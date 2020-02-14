@@ -1,13 +1,8 @@
-var staticCacheName = 'Thomas2151.github.io';
+var staticCacheName = 'pwa-starter';
 var filesToCache = [
   '/',
   'index.html',
-  'quisommesnous.html',
-  'contact.php',
-  'CSSquiSommesNous.css',
-  'CSSDeMonSiteWeb.css',
-  'CSScontact.css',
-  'application',
+  'css/style.css',
   'main.js'
 ];
 
@@ -48,7 +43,7 @@ self.addEventListener('fetch', function (e) {
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 if (workbox) {
-  console.log(`Yay! Workbox is loaded 🎉`);
+  console.log(`Yay! Workbox is loaded ??`);
   // Force development builds
   workbox.setConfig({
     debug: true
@@ -59,7 +54,7 @@ if (workbox) {
 
   // customize the entire cache name by passing in a precache and / or runtime parameter.
   workbox.core.setCacheNameDetails({
-    prefix: 'Thomas2151.github.io',
+    prefix: 'pwa-starter',
     suffix: 'v1',
     precache: 'custom-precache-name',
     runtime: 'custom-runtime-name'
@@ -89,7 +84,7 @@ if (workbox) {
   );
 
   // images could be cached and used until they're a week old, 
-  // after which they’ll need updating
+  // after which they�ll need updating
   workbox.routing.registerRoute(
     // Cache image files.
     /\.(?:png|jpg|jpeg|svg|gif)$/,
@@ -135,5 +130,5 @@ if (workbox) {
     })
   );
 } else {
-  console.log(`Boo! Workbox didn't load 😬`);
+  console.log(`Boo! Workbox didn't load ??`);
 }
