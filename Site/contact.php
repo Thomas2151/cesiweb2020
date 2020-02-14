@@ -18,7 +18,7 @@
 
   <body >
 	 <div class="head" id="app-3">
-      <img onclick="topFunction()" id="flecheHaut" src="Img/icones/up_arrow2.png" alt="fleche_haut" class="fleche_haut" srcset="Img/icones/up_arrow.png 200w,
+      <img onclick="topFunction()" id="flecheHaut" src="Img/icones/up_arrow2.png" alt="fleche_haut" class="fleche_haut"  sizes="5em" srcset="Img/icones/up_arrow.png 200w,
              Img/icones/up_arrow2.png 640w">
 	
       <img src="Img/logo.png" alt="logo" class="logo_accueil">
